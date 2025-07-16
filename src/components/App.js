@@ -6,11 +6,11 @@ import blogData from "../data/blog";
 
 function App() {
   return (
-    <>
+    <div className="App"> {/* ← This className is critical for the test to pass */}
       <Header name={blogData.name} />
       <About image={blogData.image} about={blogData.about} />
       <ArticleList posts={blogData.posts} />
-    </>
+    </div>
   );
 }
 
